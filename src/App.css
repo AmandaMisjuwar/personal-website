@@ -11,3 +11,22 @@
   height: 275px;
   width: 275px;
 }
+
+/* Disclaimer: arrow animation css taken from https://gist.github.com/CodeMyUI/823d22737686e09ae24cce2eabbd5f4a */
+.bounce {
+  -moz-animation: bounce 3.3s infinite;
+  -webkit-animation: bounce 3.3s infinite;
+  animation: bounce 3.3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

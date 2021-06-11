@@ -6,13 +6,15 @@ import defaultAC from "../images/DefaultACAvatar.svg";
 import eyesClosedAC from "../images/EyesClosedACAvatar.svg";
 // @ts-ignore
 import smilingAC from "../images/SmilingACAvatar.svg";
-import TextTransition from "react-text-transition";
+import TextTransition, { presets } from "react-text-transition";
+// @ts-ignore
+import {ReactComponent as Arrow } from '../images/arrow.svg';
 
 function Title() {
   const titleStyle = {
     minWidth: "100%",
     minHeight: "100%",
-    paddingTop: "15vh",
+    paddingTop: "10vh",
   };
 
   const headerStyle = {
@@ -31,16 +33,20 @@ function Title() {
   };
 
   const titleImageStyle = {
-    height: '275px',
-    width: '275px'
-  }
+    height: "275px",
+    width: "275px",
+  };
+
+  const arrowStyle = {
+    marginTop: '10%'
+  };
 
   const avatars = [defaultAC, smilingAC, eyesClosedAC];
 
   const myDescs = [
-    "aspiring software engineer",
-    "self-proclaimed chef...?",
-    "tik-tok dance animator",
+    "software engineer",
+    "novice level chef",
+    "beginner animator",
   ];
 
   const descColors = ["#BAD4D0", "#93A2BC", "#E6CECE"];
@@ -48,7 +54,7 @@ function Title() {
   const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
-    const interval = setInterval(() => setIndex((index) => index + 1), 1500);
+    const interval = setInterval(() => setIndex((index) => index + 1), 2100);
     return () => clearTimeout(interval);
   }, []);
 
@@ -57,7 +63,10 @@ function Title() {
       <Container className="themed-container" fluid={true}>
         <Row>
           <Col col-sm-12 col-md-6 offset-md-3>
-            <img src={avatars[index % avatars.length]} style={titleImageStyle} />
+            <img
+              src={avatars[index % avatars.length]}
+              style={titleImageStyle}
+            />
           </Col>
         </Row>
         <Row>
@@ -67,12 +76,19 @@ function Title() {
         </Row>
         <Row>
           <Col style={descStyle} col-sm-12 col-md-6 col-lg-6>
-            I'm an{" "}
+            I'm a{" "}
             <TextTransition
               text={myDescs[index % myDescs.length]}
               style={{ color: descColors[index % descColors.length] }}
               inline
+              noOverflow
+              springConfig={ presets.molasses }
             />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <Arrow style={arrowStyle} className="bounce"></Arrow>
           </Col>
         </Row>
       </Container>

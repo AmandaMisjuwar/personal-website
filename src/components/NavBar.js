@@ -15,7 +15,7 @@ function NavBar() {
     fontWeight: 500,
     paddingLeft: "10px",
   };
-  
+
   const navItemStyle = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 500,
@@ -27,6 +27,10 @@ function NavBar() {
   const navStyle = {
     paddingLeft: "40%",
   };
+
+  const arrowStyle = {
+    
+  }
 
   const NavItems = sections.map((item) => (
     <NavItem>
