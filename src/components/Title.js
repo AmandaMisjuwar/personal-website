@@ -12,9 +12,9 @@ import {ReactComponent as Arrow } from '../images/arrow.svg';
 
 function Title() {
   const titleStyle = {
-    minWidth: "100%",
-    minHeight: "100%",
-    paddingTop: "10vh",
+    width: "100vw",
+    minHeight: "100vh",
+    paddingTop: "18vh",
   };
 
   const headerStyle = {
@@ -45,7 +45,7 @@ function Title() {
 
   const myDescs = [
     "software engineer",
-    "novice level chef",
+    "novice levele chef",
     "beginner animator",
   ];
 

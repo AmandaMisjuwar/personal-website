@@ -2,21 +2,15 @@
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  padding: 5%;
-}
-
-.titleImage{
-  height: 275px;
-  width: 275px;
 }
 
 /* Disclaimer: arrow animation css taken from https://gist.github.com/CodeMyUI/823d22737686e09ae24cce2eabbd5f4a */
 .bounce {
-  -moz-animation: bounce 3.3s infinite;
-  -webkit-animation: bounce 3.3s infinite;
-  animation: bounce 3.3s infinite;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 
 @keyframes bounce {
@@ -30,3 +24,4 @@
     transform: translateY(-15px);
   }
 }
+

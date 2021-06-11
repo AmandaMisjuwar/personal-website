@@ -41,7 +41,7 @@ function NavBar() {
   ));
 
   return (
-    <Navbar color="" light fixed="top">
+    <Navbar color="white" light fixed="top">
       <NavbarBrand href="#home" style={navBrandStyle}>
         amanda misjuwar
       </NavbarBrand>
