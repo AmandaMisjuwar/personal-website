@@ -15,13 +15,15 @@ function NavBar() {
     fontWeight: 500,
     paddingLeft: "10px",
   };
+  
   const navItemStyle = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 500,
-    padding: "10px",
+    margin: "30px",
     fontSize: "18px",
     color: "black",
   };
+
   const navStyle = {
     paddingLeft: "40%",
   };

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Title from "./components/Title";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./custom.css";
+import "./App.css";
 
 function App() {
   return (
