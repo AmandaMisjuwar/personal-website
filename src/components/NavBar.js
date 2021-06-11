@@ -1,29 +1,45 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavbarBrand, NavItem } from "reactstrap";
+import { Link } from "react-router-dom";
 
-const navItems = [
-    {name: 'about', link: },
-    {name: 'work'},
-    {name: 'projects'},
-    {name: 'fun stuff'}
-]
-
+const sections = [
+  { name: "about", link: "/about" },
+  { name: "work", link: "/work" },
+  { name: "projects", link: "/projects" },
+  { name: "fun stuff", link: "/fun-stuff" },
+];
 
 function NavBar() {
-    const navBrandStyle = {
-        fontFamily: 'Kumbh Sans, sans-serif',
-        fontWeight: 400
-    };
-    const navItemStyle = {
-        fontFamily: 'Kumbh Sans, sans-serif',
-        fontWeight: 400
-    };
+  const navBrandStyle = {
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: 500,
+    paddingLeft: "10px",
+  };
+  const navItemStyle = {
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: 500,
+    padding: "10px",
+    fontSize: "18px",
+    color: "black",
+  };
+  const navStyle = {
+    paddingLeft: "40%",
+  };
+
+  const NavItems = sections.map((item) => (
+    <NavItem>
+      <Link style={navItemStyle} to={item.link}>
+        {item.name}
+      </Link>
+    </NavItem>
+  ));
+
   return (
-    <Navbar fixed="top">
-      <Navbar.Brand href="#home" style={navBrandStyle}>Amanda Misjuwar</Navbar.Brand>
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    <Navbar color="" light fixed="top">
+      <NavbarBrand href="#home" style={navBrandStyle}>
+        amanda misjuwar
+      </NavbarBrand>
+      <Nav style={navStyle}>{NavItems}</Nav>
     </Navbar>
   );
 }

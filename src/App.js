@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Title from "./components/Title";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
+import "./custom.css";
 
 function App() {
   return (
