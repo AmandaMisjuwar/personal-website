@@ -13,8 +13,8 @@ import {ReactComponent as Arrow } from '../images/arrow.svg';
 function Title() {
   const titleStyle = {
     width: "100vw",
-    minHeight: "100vh",
-    paddingTop: "18vh",
+    height: "100vh",
+    paddingTop: "12%",
   };
 
   const headerStyle = {
@@ -38,7 +38,7 @@ function Title() {
   };
 
   const arrowStyle = {
-    marginTop: '10%'
+    marginTop: '10vh'
   };
 
   const avatars = [defaultAC, smilingAC, eyesClosedAC];
@@ -49,7 +49,7 @@ function Title() {
     "beginner animator",
   ];
 
-  const descColors = ["#BAD4D0", "#93A2BC", "#E6CECE"];
+  const descColors = ["#AAC5C1", "#93A2BC", "#E6CECE"];
 
   const [index, setIndex] = React.useState(0);
 
@@ -82,7 +82,7 @@ function Title() {
               style={{ color: descColors[index % descColors.length] }}
               inline
               noOverflow
-              springConfig={ presets.molasses }
+              springConfig={ presets.stiff }
             />
           </Col>
         </Row>
