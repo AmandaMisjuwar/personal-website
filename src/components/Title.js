@@ -3,12 +3,12 @@ import { Container, Row, Col } from "reactstrap";
 // @ts-ignore
 import defaultAC from "../images/DefaultACAvatar.svg";
 // @ts-ignore
-import eyesClosedAC from "../images/EyesClosedACAvatar.svg";
+import chefAC from "../images/ChefACAvatar.svg";
 // @ts-ignore
 import smilingAC from "../images/SmilingACAvatar.svg";
 import TextTransition, { presets } from "react-text-transition";
 // @ts-ignore
-import {ReactComponent as Arrow } from '../images/arrow.svg';
+import { ReactComponent as Arrow } from "../images/arrow.svg";
 
 function Title() {
   const titleStyle = {
@@ -38,15 +38,15 @@ function Title() {
   };
 
   const arrowStyle = {
-    marginTop: '10vh'
+    marginTop: "10vh",
   };
 
-  const avatars = [defaultAC, smilingAC, eyesClosedAC];
+  const avatars = [defaultAC, chefAC, smilingAC];
 
   const myDescs = [
-    "software engineer",
-    "novice levele chef",
-    "beginner animator",
+    "an aspiring software engineer",
+    "a spicy food enthusiast",
+    "a dance animator in the making",
   ];
 
   const descColors = ["#AAC5C1", "#93A2BC", "#E6CECE"];
@@ -76,19 +76,19 @@ function Title() {
         </Row>
         <Row>
           <Col style={descStyle} col-sm-12 col-md-6 col-lg-6>
-            I'm a{" "}
+            I'm {" "}
             <TextTransition
               text={myDescs[index % myDescs.length]}
               style={{ color: descColors[index % descColors.length] }}
               inline
               noOverflow
-              springConfig={ presets.stiff }
+              springConfig={presets.stiff}
             />
           </Col>
         </Row>
         <Row>
           <Col>
-          <Arrow style={arrowStyle} className="bounce"></Arrow>
+            <Arrow style={arrowStyle} className="bounce"></Arrow>
           </Col>
         </Row>
       </Container>
