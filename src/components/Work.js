@@ -41,8 +41,8 @@ function Work() {
     },
     {
       title: "QA Analyst Intern",
-      company: "American Express Canada",
-      location: "Remote",
+      company: "Crowdlinker",
+      location: "Toronto, ON",
       term: "Fall 2020",
       blurb: "",
       colorIndex: 0,
@@ -56,7 +56,6 @@ function Work() {
   const workExperienceStyle = {
     width: "100vw",
     minHeight: "100vh",
-    paddingTop: "5%",
     paddingBottom: "5%",
     paddingLeft: "10%",
     paddingRight: "10%",

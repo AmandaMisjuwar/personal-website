@@ -25,7 +25,7 @@ function Title() {
     paddingTop: "3%",
     fontFamily: "Poppins, sans-serif",
     fontWeight: 600,
-    fontSize: "65px",
+    fontSize: "58px",
     color: "black",
   };
 
