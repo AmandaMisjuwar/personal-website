@@ -8,10 +8,10 @@ import Page from "./components/Page";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavBar></NavBar>
         <Switch>
-          <Route path="/" component={Page} exact />
+          <Route path="/" component={Page} exact/>
         </Switch>
       </BrowserRouter>
     </div>
