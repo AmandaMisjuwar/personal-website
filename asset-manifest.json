@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.acfff9da.chunk.css",
-    "main.js": "/static/js/main.33bb64e3.chunk.js",
-    "main.js.map": "/static/js/main.33bb64e3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d923c3a5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d923c3a5.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.6b8705aa.chunk.js": "/static/js/2.6b8705aa.chunk.js",
-    "static/js/2.6b8705aa.chunk.js.map": "/static/js/2.6b8705aa.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.acfff9da.chunk.css.map": "/static/css/main.acfff9da.chunk.css.map",
-    "static/js/2.6b8705aa.chunk.js.LICENSE.txt": "/static/js/2.6b8705aa.chunk.js.LICENSE.txt",
-    "static/media/AmandaMisjuwar_Resume.6a05e160.pdf": "/static/media/AmandaMisjuwar_Resume.6a05e160.pdf",
-    "static/media/ChefACAvatar.e5d9f6fd.svg": "/static/media/ChefACAvatar.e5d9f6fd.svg",
-    "static/media/DefaultACAvatar.4cc85006.svg": "/static/media/DefaultACAvatar.4cc85006.svg",
-    "static/media/SmilingACAvatar.36050c72.svg": "/static/media/SmilingACAvatar.36050c72.svg",
-    "static/media/arrow.09c6255c.svg": "/static/media/arrow.09c6255c.svg",
-    "static/media/me.2137fccc.jpeg": "/static/media/me.2137fccc.jpeg"
+    "main.css": "/personal-website/static/css/main.acfff9da.chunk.css",
+    "main.js": "/personal-website/static/js/main.9868b12f.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.9868b12f.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.715c39b8.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.715c39b8.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/personal-website/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.6b8705aa.chunk.js": "/personal-website/static/js/2.6b8705aa.chunk.js",
+    "static/js/2.6b8705aa.chunk.js.map": "/personal-website/static/js/2.6b8705aa.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/personal-website/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.acfff9da.chunk.css.map": "/personal-website/static/css/main.acfff9da.chunk.css.map",
+    "static/js/2.6b8705aa.chunk.js.LICENSE.txt": "/personal-website/static/js/2.6b8705aa.chunk.js.LICENSE.txt",
+    "static/media/AmandaMisjuwar_Resume.6a05e160.pdf": "/personal-website/static/media/AmandaMisjuwar_Resume.6a05e160.pdf",
+    "static/media/ChefACAvatar.e5d9f6fd.svg": "/personal-website/static/media/ChefACAvatar.e5d9f6fd.svg",
+    "static/media/DefaultACAvatar.4cc85006.svg": "/personal-website/static/media/DefaultACAvatar.4cc85006.svg",
+    "static/media/SmilingACAvatar.36050c72.svg": "/personal-website/static/media/SmilingACAvatar.36050c72.svg",
+    "static/media/arrow.09c6255c.svg": "/personal-website/static/media/arrow.09c6255c.svg",
+    "static/media/me.2137fccc.jpeg": "/personal-website/static/media/me.2137fccc.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d923c3a5.js",
+    "static/js/runtime-main.715c39b8.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.6b8705aa.chunk.js",
     "static/css/main.acfff9da.chunk.css",
-    "static/js/main.33bb64e3.chunk.js"
+    "static/js/main.9868b12f.chunk.js"
   ]
 }
