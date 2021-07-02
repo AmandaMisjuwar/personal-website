@@ -7,15 +7,16 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import DescriptionIcon from "@material-ui/icons/Description";
+import Contacts from "./Contacts";
 
 function About() {
   const aboutStyle = {
     width: "100vw",
     backgroundColor: "#AAC5C1",
-    paddingTop: "5%", 
+    paddingTop: "5%",
     paddingBottom: "5%",
     paddingLeft: "10%",
-    paddingRight: "10%"
+    paddingRight: "10%",
   };
 
   const colStyle = {
@@ -41,15 +42,8 @@ function About() {
     textAlign: "left",
   };
 
-  const iconStyle = {
-      color: 'white',
-      width: '50px',
-      height: '50px',
-      margin: '15%'
-  }
-
   return (
-    <Container style={aboutStyle} fluid>
+    <Container id="about" style={aboutStyle} fluid>
       <Row>
         <Col sm="12" md="6" style={colStyle}>
           <img
@@ -61,34 +55,24 @@ function About() {
         <Col sm="12" md="5" style={descColStyle}>
           <p style={pWhite}>
             Welcome! <br></br>
-            <br></br> I’m currently a 3rd year student studying Computer Science
-            at the University of Waterloo. Something about my goals in career
-            and maybe something about design and human computer interaction.{" "}
             <br></br>
+            I’m a 3rd year Computer Science student at the University of
+            Waterloo specializing in Human Computer Interaction. I really enjoy
+            learning about making stuff that's aesthetic but also highly
+            functional!<br></br>
             <br></br>
             Outside of software development, I love to cook and experiment with
-            ingredients I have in my fridge and secretly dream of starting a
-            Youtube channel to share my recipes with the world. <br></br>
-            <br></br>I also love bullet journaling (maybe I'll post my
-            spreads?), making short dance animation clips, and decorating my Animal Crossing
-            island!
+            ingredients in my cupboard, and I dream of one day having a large,
+            well-equipped kitchen to whip up anything my taste buds desire.
+            <br></br>
+            <br></br>I'm also an avid Animal Crossing player, and love to design
+            (and re-design) my 5-star island Matcha. If you play AC, feel free
+            to hit me up - I would love to visit your island and meet your
+            villagers!
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col sm="3" md={{size: 1, offset: 4}}>
-          <GitHubIcon style={iconStyle} />
-        </Col>
-        <Col sm="3" md={{size: 1}}>
-          <LinkedInIcon style={iconStyle} />
-        </Col>
-        <Col sm="3" md={{size: 1}}>
-          <EmailIcon style={iconStyle} />
-        </Col>
-        <Col sm="3" md={{size: 1}}>
-          <DescriptionIcon style={iconStyle} />
-        </Col>
-      </Row>
+      <Contacts></Contacts>
     </Container>
   );
 }

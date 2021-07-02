@@ -1,12 +1,19 @@
 import React from "react";
-import { Nav, Navbar, NavbarBrand, NavItem } from "reactstrap";
-import { Link } from "react-router-dom";
+import {
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavItem,
+  NavbarToggler,
+  Collapse
+} from "reactstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const sections = [
-  { name: "about", link: "/about" },
-  { name: "work", link: "/work" },
-  { name: "projects", link: "/projects" },
-  { name: "fun stuff", link: "/fun-stuff" },
+  { name: "about", link: "about" },
+  { name: "work", link: "work" },
+  { name: "projects", link: "projects" },
+  { name: "fun stuff", link: "fun-stuff" },
 ];
 
 function NavBar() {
@@ -28,13 +35,19 @@ function NavBar() {
     paddingLeft: "40%",
   };
 
-  const arrowStyle = {
-    
-  }
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
 
   const NavItems = sections.map((item) => (
     <NavItem>
-      <Link style={navItemStyle} to={item.link}>
+      <Link
+        style={navItemStyle}
+        to={item.link}
+        spy={true}
+        smooth={true}
+        duration={500}
+      >
         {item.name}
       </Link>
     </NavItem>
@@ -42,10 +55,13 @@ function NavBar() {
 
   return (
     <Navbar color="white" light fixed="top">
-      <NavbarBrand href="#home" style={navBrandStyle}>
+      <NavbarBrand href="" style={navBrandStyle}>
         amanda misjuwar
       </NavbarBrand>
+      <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
       <Nav style={navStyle}>{NavItems}</Nav>
+      </Collapse>
     </Navbar>
   );
 }

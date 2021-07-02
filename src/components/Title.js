@@ -46,7 +46,7 @@ function Title() {
   const myDescs = [
     "an aspiring software engineer",
     "a spicy food enthusiast",
-    "a dance animator in the making",
+    "a bullet journaler in training",
   ];
 
   const descColors = ["#AAC5C1", "#93A2BC", "#E6CECE"];
@@ -59,8 +59,7 @@ function Title() {
   }, []);
 
   return (
-    <div id="title" style={titleStyle}>
-      <Container className="themed-container" fluid={true}>
+      <Container id="title" style={titleStyle} className="themed-container" fluid={true}>
         <Row>
           <Col col-sm-12 col-md-6 offset-md-3>
             <img
@@ -92,7 +91,6 @@ function Title() {
           </Col>
         </Row>
       </Container>
-    </div>
   );
 }
 

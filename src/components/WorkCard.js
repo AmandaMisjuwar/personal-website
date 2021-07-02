@@ -5,13 +5,15 @@ import { Card, CardBody, Collapse } from "reactstrap";
 const lineColors = ["#93A2BC", "#AAC5C1", "#E6CECE"];
 
 function ExpandButton(props) {
-  const { onClick, cta, colorIndex } = props;
+  const { onClick, cta, link, colorIndex } = props;
 
   const readMoreStyle = {
     backgroundColor: lineColors[colorIndex]
   }
 
-  return <div onClick={onClick} className="readMore" style={readMoreStyle}>{cta}</div>;
+  const expand = link ? <a href={link}><div className="readMore" style={readMoreStyle}>{cta}</div></a> : <div onClick={onClick} className="readMore" style={readMoreStyle}>{cta}</div>
+
+  return expand;
 }
 
 function WorkCard(props) {
