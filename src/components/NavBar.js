@@ -5,15 +5,15 @@ import {
   NavbarBrand,
   NavItem,
   NavbarToggler,
-  Collapse
+  Collapse,
 } from "reactstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const sections = [
   { name: "about", link: "about" },
   { name: "work", link: "work" },
-  { name: "projects", link: "projects" },
-  { name: "fun stuff", link: "fun-stuff" },
+  { name: "projects", link: "coming-soon" },
+  { name: "fun stuff", link: "coming-soon" },
 ];
 
 function NavBar() {
@@ -26,13 +26,13 @@ function NavBar() {
   const navItemStyle = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 500,
-    margin: "30px",
     fontSize: "18px",
     color: "black",
-  };
-
-  const navStyle = {
-    paddingLeft: "40%",
+    paddingTop: '5px',
+    paddingBottom: '5px',
+    cursor: 'pointer',
+    marginLeft: '25px',
+    marginRight: '25px',
   };
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,11 +40,10 @@ function NavBar() {
   const toggle = () => setIsOpen(!isOpen);
 
   const NavItems = sections.map((item) => (
-    <NavItem>
+    <NavItem style={navItemStyle}>
       <Link
-        style={navItemStyle}
+        // style={navItemStyle}
         to={item.link}
-        spy={true}
         smooth={true}
         duration={500}
       >
@@ -54,13 +53,15 @@ function NavBar() {
   ));
 
   return (
-    <Navbar color="white" light fixed="top">
+    <Navbar color="white" light fixed="top" expand="lg">
       <NavbarBrand href="" style={navBrandStyle}>
         amanda misjuwar
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-      <Nav style={navStyle}>{NavItems}</Nav>
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="ml-auto" navbar>
+          {NavItems}
+        </Nav>
       </Collapse>
     </Navbar>
   );

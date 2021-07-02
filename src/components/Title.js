@@ -9,6 +9,7 @@ import smilingAC from "../images/SmilingACAvatar.svg";
 import TextTransition, { presets } from "react-text-transition";
 // @ts-ignore
 import { ReactComponent as Arrow } from "../images/arrow.svg";
+import { Link } from "react-scroll";
 
 function Title() {
   const titleStyle = {
@@ -39,6 +40,7 @@ function Title() {
 
   const arrowStyle = {
     marginTop: "10vh",
+    cursor: 'pointer'
   };
 
   const avatars = [defaultAC, chefAC, smilingAC];
@@ -59,38 +61,47 @@ function Title() {
   }, []);
 
   return (
-      <Container id="title" style={titleStyle} className="themed-container" fluid={true}>
-        <Row>
-          <Col col-sm-12 col-md-6 offset-md-3>
-            <img
-              src={avatars[index % avatars.length]}
-              style={titleImageStyle}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h1 style={headerStyle}>Hi! I'm Amanda.</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col style={descStyle} col-sm-12 col-md-6 col-lg-6>
-            I'm {" "}
-            <TextTransition
-              text={myDescs[index % myDescs.length]}
-              style={{ color: descColors[index % descColors.length] }}
-              inline
-              noOverflow
-              springConfig={presets.stiff}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
+    <Container
+      id="title"
+      style={titleStyle}
+      className="themed-container"
+      fluid={true}
+    >
+      <Row>
+        <Col col-sm-12 col-md-6 offset-md-3>
+          <img src={avatars[index % avatars.length]} style={titleImageStyle} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <h1 style={headerStyle}>Hi! I'm Amanda.</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col style={descStyle} col-sm-12 col-md-6 col-lg-6>
+          I'm{" "}
+          <TextTransition
+            text={myDescs[index % myDescs.length]}
+            style={{ color: descColors[index % descColors.length] }}
+            inline
+            noOverflow
+            springConfig={presets.stiff}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Link
+            // style={navItemStyle}
+            to="about"
+            smooth={true}
+            duration={500}
+          >
             <Arrow style={arrowStyle} className="bounce"></Arrow>
-          </Col>
-        </Row>
-      </Container>
+          </Link>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

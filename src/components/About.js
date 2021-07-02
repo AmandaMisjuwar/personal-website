@@ -3,10 +3,6 @@ import { Container, Row, Col } from "reactstrap";
 // @ts-ignore
 import me from "../images/me.jpeg";
 import "../App.css";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import DescriptionIcon from "@material-ui/icons/Description";
 import Contacts from "./Contacts";
 
 function About() {

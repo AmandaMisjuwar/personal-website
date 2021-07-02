@@ -5,17 +5,17 @@ import WorkCard from "./WorkCard";
 
 function Work() {
   const workExperiences = [
-    {
-      title: "Full-stack Software Developer",
-      company: "OANDA",
-      location: "Remote",
-      term: "Summer 2021",
-      blurb:
-        "Working on the onboarding process using React, Python, and Flask.",
-      colorIndex: 0,
-      cta: "Read more",
-      link: "",
-    },
+    // {
+    //   title: "Full-stack Software Developer",
+    //   company: "OANDA",
+    //   location: "Remote",
+    //   term: "Summer 2021",
+    //   blurb:
+    //     "Currently, Working on the onboarding process using React, Python, and Flask.",
+    //   colorIndex: 0,
+    //   cta: "Read more",
+    //   link: "",
+    // },
     {
       title: "Software Engineer Intern",
       company: "American Express Canada",
