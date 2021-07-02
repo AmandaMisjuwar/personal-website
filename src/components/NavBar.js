@@ -20,7 +20,7 @@ function NavBar() {
   const navBrandStyle = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 500,
-    paddingLeft: "10px",
+    paddingLeft: "2%",
   };
 
   const navItemStyle = {
@@ -32,7 +32,6 @@ function NavBar() {
     paddingBottom: '5px',
     cursor: 'pointer',
     marginLeft: '25px',
-    marginRight: '25px',
   };
 
   const [isOpen, setIsOpen] = React.useState(false);

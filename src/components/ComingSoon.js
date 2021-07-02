@@ -1,17 +1,21 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import Contacts from "./Contacts";
 
 function ComingSoon() {
   const comingSoonStyle = {
-    height: "100vh",
     padding: "25%",
     background: "#93A2BC",
     color: "white",
   };
   return (
     <Container id="coming-soon" style={comingSoonStyle} fluid>
-      <h1>This section is coming soon! :)</h1>
+      <Row>
+        <Col>
+          <h1>This section is coming soon!</h1>
+        </Col>
+      </Row>
+
       <br></br>
       <Contacts></Contacts>
     </Container>

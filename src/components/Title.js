@@ -15,14 +15,17 @@ function Title() {
   const titleStyle = {
     width: "100vw",
     height: "100vh",
-    paddingTop: "12%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
   };
 
   const headerStyle = {
     paddingTop: "3%",
     fontFamily: "Poppins, sans-serif",
     fontWeight: 600,
-    fontSize: "78px",
+    fontSize: "65px",
     color: "black",
   };
 
@@ -34,8 +37,8 @@ function Title() {
   };
 
   const titleImageStyle = {
-    height: "275px",
-    width: "275px",
+    height: "250px",
+    width: "250px",
   };
 
   const arrowStyle = {
@@ -64,7 +67,7 @@ function Title() {
     <Container
       id="title"
       style={titleStyle}
-      className="themed-container"
+
       fluid={true}
     >
       <Row>
