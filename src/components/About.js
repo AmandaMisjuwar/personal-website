@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 // @ts-ignore
-import me from "../images/me.jpeg";
+import me from "../resources/me.jpeg";
 import "../App.css";
 import Contacts from "./Contacts";
 

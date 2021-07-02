@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 // @ts-ignore
-import defaultAC from "../images/DefaultACAvatar.svg";
+import defaultAC from "../resources/DefaultACAvatar.svg";
 // @ts-ignore
-import chefAC from "../images/ChefACAvatar.svg";
+import chefAC from "../resources/ChefACAvatar.svg";
 // @ts-ignore
-import smilingAC from "../images/SmilingACAvatar.svg";
+import smilingAC from "../resources/SmilingACAvatar.svg";
 import TextTransition, { presets } from "react-text-transition";
 // @ts-ignore
-import { ReactComponent as Arrow } from "../images/arrow.svg";
+import { ReactComponent as Arrow } from "../resources/arrow.svg";
 import { Link } from "react-scroll";
 
 function Title() {
