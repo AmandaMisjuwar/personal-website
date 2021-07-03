@@ -51,7 +51,7 @@ function Title() {
 
   const myDescs = [
     "an aspiring software engineer",
-    "a spicy food enthusiast and chef",
+    "a spicy food enthusiast",
     "a bullet journaler in training",
   ];
 

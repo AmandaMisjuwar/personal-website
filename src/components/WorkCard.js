@@ -2,7 +2,7 @@ import { FullscreenExitTwoTone } from "@material-ui/icons";
 import React from "react";
 import { Card, CardBody, Collapse } from "reactstrap";
 
-const lineColors = ["#93A2BC", "#96B1AD", "#E6CECE"];
+const lineColors = ["#93A2BC", "#E6CECE", "#96B1AD"];
 
 function ExpandButton(props) {
   const { onClick, cta, link, colorIndex } = props;

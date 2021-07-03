@@ -13,11 +13,11 @@ function Contacts() {
     color: "white",
     width: "50px",
     height: "50px",
-    margin: "15%",
+    margin: "5%"
   };
 
   const contactStyle = {
-    marginTop: "5vh"
+    marginTop: "5vh",
   }
 
   return (
@@ -27,7 +27,7 @@ function Contacts() {
           <GitHubIcon style={iconStyle} className="iconHover" />
         </a>
       </Col>
-      <Col >
+      <Col>
         <a href="https://www.linkedin.com/in/amandamisjuwar/">
           <LinkedInIcon style={iconStyle} className="iconHover"/>
         </a>
