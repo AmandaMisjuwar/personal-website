@@ -18,7 +18,8 @@ function Title() {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    textAlign: "center",
   };
 
   const headerStyle = {
@@ -43,7 +44,7 @@ function Title() {
 
   const arrowStyle = {
     marginTop: "15vh",
-    cursor: 'pointer'
+    cursor: "pointer",
   };
 
   const avatars = [defaultAC, chefAC, smilingAC];
@@ -64,11 +65,7 @@ function Title() {
   }, []);
 
   return (
-    <Container
-      id="title"
-      style={titleStyle}
-      fluid={true}
-    >
+    <Container id="title" style={titleStyle} fluid={true}>
       <Row>
         <Col col-sm-12 col-md-6 offset-md-3>
           <img src={avatars[index % avatars.length]} style={titleImageStyle} />
