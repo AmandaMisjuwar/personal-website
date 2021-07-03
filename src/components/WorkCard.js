@@ -2,28 +2,55 @@ import { FullscreenExitTwoTone } from "@material-ui/icons";
 import React from "react";
 import { Card, CardBody, Collapse } from "reactstrap";
 
-const lineColors = ["#93A2BC", "#AAC5C1", "#E6CECE"];
+const lineColors = ["#93A2BC", "#96B1AD", "#E6CECE"];
 
 function ExpandButton(props) {
   const { onClick, cta, link, colorIndex } = props;
 
   const readMoreStyle = {
-    backgroundColor: lineColors[colorIndex]
-  }
+    backgroundColor: lineColors[colorIndex],
+  };
 
-  const expand = link ? <a href={link}><div className="readMore" style={readMoreStyle}>{cta}</div></a> : <div onClick={onClick} className="readMore" style={readMoreStyle}>{cta}</div>
+  const expand = link ? (
+    <a href={link}>
+      <div className="readMore" style={readMoreStyle}>
+        {cta}
+      </div>
+    </a>
+  ) : (
+    <div onClick={onClick} className="readMore" style={readMoreStyle}>
+      {cta}
+    </div>
+  );
 
   return expand;
 }
 
 function WorkCard(props) {
-  const { title, company, location, term, blurb, colorIndex, cta, link } = props;
+  const {
+    title,
+    company,
+    location,
+    term,
+    blurb,
+    colorIndex,
+    cta,
+    link,
+  } = props;
 
   const cardStyle = {
     border: "none",
     borderLeft: "8px solid " + lineColors[colorIndex],
     borderRadius: "0px 0px 0px 0px",
-    paddingBottom: "2%"
+    paddingBottom: "2%",
+  };
+
+  const hrStyle = {
+    color: lineColors[colorIndex],
+    backgroundColor: lineColors[colorIndex],
+    height: "2px",
+    width: "6%",
+    marginLeft: "0px",
   };
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -31,6 +58,12 @@ function WorkCard(props) {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  // Format paragraphs in blurb
+  const paragraphs = blurb.split("\n");
+  const blurbComponents = paragraphs.map((paragraph) => {
+    return <p className="cardBody">{paragraph}</p>;
+  });
 
   return (
     <Card style={cardStyle}>
@@ -47,11 +80,9 @@ function WorkCard(props) {
             colorIndex={colorIndex}
           />
         ) : (
-          <hr></hr>
+          <hr style={hrStyle} />
         )}
-        <Collapse isOpen={isOpen}>
-          <p className="cardBody">{blurb}</p>
-        </Collapse>
+        <Collapse isOpen={isOpen}>{blurbComponents}</Collapse>
       </CardBody>
     </Card>
   );

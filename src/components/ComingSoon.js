@@ -7,6 +7,7 @@ function ComingSoon() {
     padding: "25%",
     background: "#93A2BC",
     color: "white",
+    textAlign: "center"
   };
   return (
     <Container id="coming-soon" style={comingSoonStyle} fluid>

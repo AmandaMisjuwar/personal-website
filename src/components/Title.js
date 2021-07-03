@@ -42,7 +42,7 @@ function Title() {
   };
 
   const arrowStyle = {
-    marginTop: "10vh",
+    marginTop: "15vh",
     cursor: 'pointer'
   };
 
@@ -50,11 +50,11 @@ function Title() {
 
   const myDescs = [
     "an aspiring software engineer",
-    "a spicy food enthusiast",
+    "a spicy food enthusiast and chef",
     "a bullet journaler in training",
   ];
 
-  const descColors = ["#AAC5C1", "#93A2BC", "#E6CECE"];
+  const descColors = ["#96B1AD", "#93A2BC", "#E6CECE"];
 
   const [index, setIndex] = React.useState(0);
 
@@ -67,7 +67,6 @@ function Title() {
     <Container
       id="title"
       style={titleStyle}
-
       fluid={true}
     >
       <Row>

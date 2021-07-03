@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   min-height: 100vh;
   width: 100vw;
 }
@@ -37,12 +36,14 @@
   font-weight: 600;
   text-align: left;
   margin-top: 5px;
+  font-family: 'Jost';
 }
 
 .cardBody {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 17px;
   text-align: left;
+  font-family: 'Jost';
+  font-weight: 400;
 }
 
 .readMore {

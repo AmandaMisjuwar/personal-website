@@ -5,25 +5,26 @@ import WorkCard from "./WorkCard";
 
 function Work() {
   const workExperiences = [
-    // {
-    //   title: "Full-stack Software Developer",
-    //   company: "OANDA",
-    //   location: "Remote",
-    //   term: "Summer 2021",
-    //   blurb:
-    //     "Currently, Working on the onboarding process using React, Python, and Flask.",
-    //   colorIndex: 0,
-    //   cta: "Read more",
-    //   link: "",
-    // },
+    {
+      title: "Full-stack Software Developer",
+      company: "OANDA",
+      location: "Remote",
+      term: "Summer 2021",
+      blurb:
+        `Currently at OANDA, I'm on the Activation team, which handles the customer onboarding process. I've been building streamlined customer-facing components using React.js, Typescript, Material UI, and Formik. As for the backend, I've been working on an API that handles tasks such as ID verification and user data in Python on Pyramid.
+        Recently, I refactored critical backend logic regarding customer account creation, which removed all special case logic from the code and isolated it in configuration settings instead.`,
+      colorIndex: 0,
+      cta: "Read more",
+      link: "",
+    },
     {
       title: "Software Engineer Intern",
       company: "American Express Canada",
       location: "Remote",
       term: "Fall 2020",
-      blurb: `At Amex, I was on the International Insurance Team, where I helped develop features on an internal portal used by our agents across the world (UK, Argentina, Hong Kong, etc).
-      I also lead the implementation of a big data workflow that was new to the team, eliminating the need for business analysts to regularly request manual data queries for analysis.
-      Finally, I volunteered for Amex Canada’s Women in Tech network and helped them make an engaging publicity video which they now use to promote and recruit more network members and propose events!`,
+      blurb: `At Amex, I joined the International Insurance Team, where I built features on an internal portal used by agents across the world (UK, Argentina, Hong Kong, etc). I greatly improved my development skills using HTML/CSS/Javascript as well as Java on the Spring MVC framework.
+      I also lead the implementation of a new big data workflow for the team, which eliminated the need for business analysts to repeatedly request manual data queries for marketing analysis. This was a huge learning curve for me as I had never worked with big data before. I authored shell scripts and configured event engine jobs to automate the data extraction through Hadoop, intermediate storage in Jethro tables, and live connection to Tableau reports. Throughout the process, I hosted numerous check-ins with marketing analysts to communicate requirements, which was also new experience to me!
+      Finally, I had the opportunity to be a part of Amex Canada's Women in Technology team, where I got to create a publicity video that they now use to promote the network, recruit more  members, and propose events, which was super fun and engaging!`,
       colorIndex: 1,
       cta: "Read more",
       link: "",
@@ -33,7 +34,7 @@ function Work() {
       company: "AGF Investments",
       location: "Toronto, ON",
       term: "Winter 2020",
-      blurb: `As a Junior Web Developer on the App Development team at AGF Investments, I designed and implemented unit tests in jUnit for the service and controller layers of the backend of AGF.com, the main agent and customer facing platform for the company. This resulted in improved functionality of critical features and brought up new edge cases for testing.
+      blurb: `As a Junior Web Developer on the App Development team at AGF Investments, I designed and implemented unit tests in jUnit for the service and controller layers of the backend of AGF.com, the main agent and customer facing platform for the company. This resulted in improved functionality of critical features as well as higher confidence in correct behaviour of the code.
       I also helped investigate and fix critical back and front end production bugs that directly impacted both agents and clients.`,
       colorIndex: 2,
       cta: "Read more",
@@ -59,6 +60,7 @@ function Work() {
     paddingBottom: "5%",
     paddingLeft: "10%",
     paddingRight: "10%",
+    textAlign: "center"
   };
 
   const workExperienceComponents = workExperiences.map((item) => {

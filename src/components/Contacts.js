@@ -16,24 +16,28 @@ function Contacts() {
     margin: "15%",
   };
 
+  const contactStyle = {
+    marginTop: "5vh"
+  }
+
   return (
-    <Row id="contacts">
-      <Col sm="3" lg={{ size: 1, offset: 4 }}>
+    <Row id="contacts" style={contactStyle} justify-content-md-center>
+      <Col>
         <a href="https://github.com/amandamisjuwar">
           <GitHubIcon style={iconStyle} className="iconHover" />
         </a>
       </Col>
-      <Col sm="3" lg={{ size: 1 }}>
+      <Col >
         <a href="https://www.linkedin.com/in/amandamisjuwar/">
           <LinkedInIcon style={iconStyle} className="iconHover"/>
         </a>
       </Col>
-      <Col sm="3" lg={{ size: 1 }}>
+      <Col>
         <a href="mailto: abmisjuw@uwaterloo.ca">
           <EmailIcon style={iconStyle} className="iconHover"/>
         </a>
       </Col>
-      <Col sm="3" lg={{ size: 1 }}>
+      <Col>
         <a href={Resume} rel="noopener noreferrer" target="_blank">
           <DescriptionIcon style={iconStyle} className="iconHover"/>
         </a>

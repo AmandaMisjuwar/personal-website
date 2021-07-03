@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico?" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="personalWebsite"
-      author="Amanda Misjuwar"
-    />
+    <meta name="personalWebsite" author="Amanda Misjuwar" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +21,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Amanda Misjuwar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Mulish:wght@500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <script type="text/javascript">
@@ -38,16 +40,22 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

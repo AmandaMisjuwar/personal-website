@@ -39,7 +39,7 @@ function NavBar() {
   const toggle = () => setIsOpen(!isOpen);
 
   const NavItems = sections.map((item) => (
-    <NavItem style={navItemStyle}>
+    <NavItem style={navItemStyle} >
       <Link
         // style={navItemStyle}
         to={item.link}
@@ -57,7 +57,7 @@ function NavBar() {
         amanda misjuwar
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
+      <Collapse isOpen={isOpen} navbar >
         <Nav className="ml-auto" navbar>
           {NavItems}
         </Nav>

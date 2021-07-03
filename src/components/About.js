@@ -8,11 +8,12 @@ import Contacts from "./Contacts";
 function About() {
   const aboutStyle = {
     width: "100vw",
-    backgroundColor: "#AAC5C1",
+    backgroundColor: "#96B1AD",
     paddingTop: "5%",
     paddingBottom: "5%",
     paddingLeft: "10%",
     paddingRight: "10%",
+    textAlign: "center"
   };
 
   const colStyle = {
@@ -31,9 +32,9 @@ function About() {
   };
 
   const pWhite = {
-    fontFamily: "Poppins, sans-serif",
-    fontWeight: 400,
-    fontSize: "16px",
+    fontFamily: 'Jost', 
+    fontWeight: 500,
+    fontSize: "17px",
     color: "white",
     textAlign: "left",
   };
