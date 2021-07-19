@@ -51,8 +51,8 @@ function Title() {
 
   const myDescs = [
     "an aspiring software engineer",
-    "a spicy food enthusiast",
     "a bullet journaler in training",
+    "a spicy food enthusiast",
   ];
 
   const descColors = ["#96B1AD", "#93A2BC", "#E6CECE"];

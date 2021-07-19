@@ -44,7 +44,7 @@ function Work() {
       title: "QA Analyst Intern",
       company: "Crowdlinker",
       location: "Toronto, ON",
-      term: "Fall 2020",
+      term: "Summer 2019",
       blurb: "",
       colorIndex: 0,
       cta: "Read the blog post",
