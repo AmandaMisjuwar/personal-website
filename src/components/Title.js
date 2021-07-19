@@ -51,8 +51,8 @@ function Title() {
 
   const myDescs = [
     "an aspiring software engineer",
-    "a bullet journaler in training",
     "a spicy food enthusiast",
+    "a bullet journaler in training",
   ];
 
   const descColors = ["#96B1AD", "#93A2BC", "#E6CECE"];
@@ -83,7 +83,6 @@ function Title() {
             text={myDescs[index % myDescs.length]}
             style={{ color: descColors[index % descColors.length] }}
             inline
-            noOverflow
             springConfig={presets.stiff}
           />
         </Col>
