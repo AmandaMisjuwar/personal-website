@@ -3,6 +3,7 @@ import About from "./About";
 import Title from "./Title";
 import Work from "./Work";
 import ComingSoon from './ComingSoon'
+import Projects from "./Projects";
 
 function Page() {
   return (
@@ -10,6 +11,7 @@ function Page() {
       <Title></Title>
       <About></About>
       <Work></Work>
+      <Projects></Projects>
       <ComingSoon></ComingSoon>
     </div>
   );

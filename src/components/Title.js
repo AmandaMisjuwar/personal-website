@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 
 function Title() {
   const titleStyle = {
-    width: "100vw",
+    maxWidth: "100vw",
     height: "100vh",
     display: "flex",
     flexDirection: "column",
@@ -52,7 +52,7 @@ function Title() {
   const myDescs = [
     "an aspiring software engineer",
     "a spicy food enthusiast",
-    "a bullet journaler in training",
+    "a bullet journal creator",
   ];
 
   const descColors = ["#96B1AD", "#93A2BC", "#E6CECE"];
@@ -65,10 +65,10 @@ function Title() {
   }, []);
 
   return (
-    <Container id="title" style={titleStyle} fluid={true}>
+    <Container id="title" style={titleStyle} fluid={false}>
       <Row>
         <Col col-sm-12 col-md-6 offset-md-3>
-          <img src={avatars[index % avatars.length]} style={titleImageStyle} />
+          <img alt={"avatar character"} src={avatars[index % avatars.length]} style={titleImageStyle} />
         </Col>
       </Row>
       <Row>

@@ -45,7 +45,7 @@ function About() {
         <Col sm="12" md="6" style={colStyle}>
           <img
             src={me}
-            alt="Image of me at Sugar Beach!"
+            alt="Me at Sugar Beach!"
             style={profPicStyle}
           ></img>
         </Col>

@@ -7,12 +7,12 @@ import {
   NavbarToggler,
   Collapse,
 } from "reactstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const sections = [
   { name: "about", link: "about" },
   { name: "work", link: "work" },
-  { name: "projects", link: "coming-soon" },
+  { name: "projects", link: "projects" },
   { name: "fun stuff", link: "coming-soon" },
 ];
 

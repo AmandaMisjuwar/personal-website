@@ -1,4 +1,3 @@
-import { FullscreenExitTwoTone } from "@material-ui/icons";
 import React from "react";
 import { Card, CardBody, Collapse } from "reactstrap";
 
@@ -42,7 +41,7 @@ function WorkCard(props) {
     border: "none",
     borderLeft: "8px solid " + lineColors[colorIndex],
     borderRadius: "0px 0px 0px 0px",
-    paddingBottom: "2%",
+    padding: "2%",
   };
 
   const hrStyle = {

@@ -6,13 +6,25 @@ import WorkCard from "./WorkCard";
 function Work() {
   const workExperiences = [
     {
+      title: "Incoming Software Engineer Intern",
+      company: "Microsoft",
+      location: "Redmond, WA",
+      term: "Summer 2022",
+      blurb:
+        `I'm really looking forward to joining the Cloud + AI group at Microsoft next summer!`,
+      colorIndex: 2,
+      cta: "Read more",
+      link: "",
+    },
+    {
       title: "Full-stack Software Developer",
       company: "OANDA",
       location: "Remote",
       term: "Summer 2021",
       blurb:
-        `Currently at OANDA, I'm on the Activation team, which handles the customer onboarding process. I've been building streamlined customer-facing components using React.js, Typescript, Material UI, and Formik. As for the backend, I've been working on an API that handles tasks such as ID verification and user data in Python on Pyramid.
-        Recently, I refactored critical backend logic regarding customer account creation, which removed all special case logic from the code and isolated it in configuration settings instead.`,
+        `At OANDA, I was on the Activation team, which handles the customer onboarding process. I built streamlined customer-facing components using React.js, Typescript, Material UI, and Formik. As for the backend, I worked on an API that handles tasks such as ID verification and user data in Python on Pyramid.
+
+        One interesting thing I did was integrate a third party address finder service into the sign-up forms in order to standardize the user experience for customers in 100+ countries. Since global address formats differ significantly, the challenge was figuring out how to keep the forms as simple and intuitive to complete while still obtaining the necessary country-level details to proceed with ID verification.`,
       colorIndex: 0,
       cta: "Read more",
       link: "",
