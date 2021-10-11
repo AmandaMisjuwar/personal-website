@@ -10,6 +10,7 @@ import TextTransition, { presets } from "react-text-transition";
 // @ts-ignore
 import { ReactComponent as Arrow } from "../resources/arrow.svg";
 import { Link } from "react-scroll";
+import ReactGA from 'react-ga';
 
 function Title() {
   const titleStyle = {
@@ -58,6 +59,10 @@ function Title() {
   const descColors = ["#96B1AD", "#93A2BC", "#E6CECE"];
 
   const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
 
   React.useEffect(() => {
     const interval = setInterval(() => setIndex((index) => index + 1), 2100);
