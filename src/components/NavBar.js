@@ -8,6 +8,7 @@ import {
   Collapse,
 } from "reactstrap";
 import { Link } from "react-scroll";
+import Resume from '../resources/AmandaMisjuwar_Resume.pdf';
 
 const sections = [
   { name: "about", link: "about" },
@@ -41,7 +42,6 @@ function NavBar() {
   const NavItems = sections.map((item) => (
     <NavItem style={navItemStyle} >
       <Link
-        // style={navItemStyle}
         to={item.link}
         smooth={true}
         duration={500}
@@ -60,6 +60,9 @@ function NavBar() {
       <Collapse isOpen={isOpen} navbar >
         <Nav className="ml-auto" navbar>
           {NavItems}
+          <NavItem style={navItemStyle}>
+          <a style={{color: "black"}} href={Resume} rel="noopener noreferrer" target="_blank">resume</a>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>

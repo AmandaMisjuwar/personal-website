@@ -5,7 +5,7 @@ import Contacts from "./Contacts";
 function ComingSoon() {
   const comingSoonStyle = {
     padding: "25%",
-    background: "#93A2BC",
+    background: "#E6CECE",
     color: "white",
     textAlign: "center"
   };

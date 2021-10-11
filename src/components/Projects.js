@@ -17,7 +17,7 @@ function Projects() {
       name: "Community Fridge KW",
       organization: "UW Blueprint",
       desc: `A scheduling platform for the local non-profit organization Community Fridge KW!`,
-      stack: `TypeScript, ReactJS, Express.js, NodeJS, PostgreSQL`,
+      stack: `TypeScript, ReactJS, Express.js, NodeJS, PostgreSQL, Docker`,
       colorIndex: 1,
       link: "https://github.com/uwblueprint/community-fridge-kw/",
     },
