@@ -6,12 +6,12 @@ import WorkCard from "./WorkCard";
 function Work() {
   const workExperiences = [
     {
-      title: "Incoming Software Engineer Intern",
+      title: "Software Engineer Intern",
       company: "Microsoft",
       location: "Redmond, WA",
       term: "Summer 2022",
       blurb:
-        `I'm really looking forward to joining the Cloud + AI group at Microsoft next summer!`,
+        `Currently joining the .NET Core Infrastructure team to support the open-source development of .NET applications!`,
       colorIndex: 2,
       cta: "Read more",
       link: "",
@@ -92,7 +92,8 @@ function Work() {
 
   return (
     <div id="work">
-      <Container style={workExperienceStyle}>
+      <Container 
+      style={workExperienceStyle}>
         <Row>
           <Col>
             <h1 className="pageHeader" style={pageHeaderFont}>

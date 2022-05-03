@@ -4,7 +4,7 @@ import { Card, CardBody } from "reactstrap";
 const lineColors = ["#93A2BC", "#E6CECE", "#96B1AD"];
 
 function ProjectCard(props) {
-  const { name, organization, desc, stack, colorIndex, link } = props;
+  const { name, organization, desc, stack, colorIndex, link, link2 } = props;
 
   const cardStyle = {
     border: "none",
@@ -33,6 +33,7 @@ function ProjectCard(props) {
         <p className="cardBody">{desc}</p>
         <p className="cardBody">Built with {stack}</p>
         {link ? <p className="cardBody">Find the source code <a href={link}>here</a></p> : null}
+        {link2 ? <p className="cardBody">Check out the live product <a href={link2}>here</a></p> : null}
       </CardBody>
     </Card>
   );

@@ -70,6 +70,7 @@ function Title() {
   }, []);
 
   return (
+    <>
     <Container id="title" style={titleStyle} fluid={false}>
       <Row>
         <Col col-sm-12 col-md-6 offset-md-3>
@@ -105,6 +106,7 @@ function Title() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

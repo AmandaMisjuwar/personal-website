@@ -9,7 +9,7 @@ function Projects() {
       name: "Marketeer",
       organization: `Hack the North 2021`,
       desc: `A competitor analysis tool utilizing web scraping for small business owners to visualize online marketplace metrics`,
-      stack: `ReactJS, NodeJS, Puppeteer, Firebase, Dropbase`,
+      stack: `ReactJS, NodeJS, ExpressJS, Puppeteer, Firebase, Dropbase`,
       colorIndex: 2,
       link: "https://github.com/AmandaMisjuwar/marketing-analysis-tool",
     },
@@ -17,9 +17,10 @@ function Projects() {
       name: "Community Fridge KW",
       organization: "UW Blueprint",
       desc: `A scheduling platform for the local non-profit organization Community Fridge KW!`,
-      stack: `TypeScript, ReactJS, Express.js, NodeJS, PostgreSQL, Docker`,
+      stack: `TypeScript, ReactJS, NodeJS, ExpressJS, PostgreSQL, Sequelize, Docker`,
       colorIndex: 1,
       link: "https://github.com/uwblueprint/community-fridge-kw/",
+      link2: "https://schedule.communityfridgekw.ca/"
     },
     {
       name: "fundbear",
@@ -36,6 +37,14 @@ function Projects() {
       stack: `ReactJS`,
       colorIndex: 1,
       link: "https://github.com/AmandaMisjuwar/personal-website",
+    },
+    {
+      name: "Boomer Notes",
+      organization: "",
+      desc: `An Android MVVM notes app with functionality to sync offline/online notes, organize notes into folders, set reminders in each note, search for notes using keywords, & toggle light/dark themes`,
+      stack: `Kotlin, Room, Retrofit, Spring Boot`,
+      colorIndex: 2,
+      link: "",
     },
     {
       name: "biquadris",
@@ -70,6 +79,7 @@ function Projects() {
           colorIndex={item.colorIndex}
           cta={item.cta}
           link={item.link}
+          link2={item.link2}
         ></ProjectCard>
       </Col>
     );
