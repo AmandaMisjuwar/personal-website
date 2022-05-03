@@ -6,8 +6,12 @@ import "../App.css";
 import Contacts from "./Contacts";
 // @ts-ignore
 import Resume from '../resources/AmandaMisjuwar_Resume.pdf';
+import useWindowDimensions from "../utils/Utils";
 
 function About() {
+
+  const windowDimensions = useWindowDimensions();
+
   const aboutStyle = {
     width: "100vw",
     backgroundColor: "#96B1AD",
@@ -23,7 +27,7 @@ function About() {
   };
 
   const profPicStyle = {
-    width: "350px",
+    width: windowDimensions.width >= 992 ? "24vw" : "80vw",
     margin: "auto",
   };
 
