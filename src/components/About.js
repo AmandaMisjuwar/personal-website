@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 // @ts-ignore
-import me from "../resources/me.jpeg";
+import me from "../resources/me.jpg";
 import "../App.css";
 import Contacts from "./Contacts";
 // @ts-ignore
@@ -23,7 +23,7 @@ function About() {
   };
 
   const profPicStyle = {
-    width: "325px",
+    width: "350px",
     margin: "auto",
   };
 
@@ -59,7 +59,7 @@ function About() {
             <br></br>
             <br></br>
             Currently, I'm interning at Microsoft on the .NET Core Infrastructure team, which builds tools to support
-            the open-source development of .NET applications! I'm also volunteering with <a href="https://uwblueprint.org/">UW Blueprint</a> to lead the 
+            the open-source development of .NET applications. I'm also volunteering with <a href="https://uwblueprint.org/">UW Blueprint</a> to lead the 
             implementation of a camp booking system for the non-profit org Focus on Nature! 🌱
             <br></br>
             <br></br>

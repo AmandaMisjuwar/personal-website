@@ -22,7 +22,7 @@ function Work() {
       location: "Remote",
       term: "Summer 2021",
       blurb:
-        `At OANDA, I was on the Activation team, which handles the customer onboarding process. I built streamlined customer-facing components using React.js, Typescript, Material UI, and Formik. As for the backend, I worked on an API that handles tasks such as ID verification and user data in Python on Pyramid.
+        `At OANDA, I was on the Activation team, which handles the customer onboarding process. I built streamlined customer-facing components using ReactJS, Typescript, Material UI, and Formik. As for the backend, I worked on an API that handles tasks such as ID verification and user data in Python on Pyramid.
 
         One interesting thing I did was integrate a third party address finder service into the sign-up forms in order to standardize the user experience for customers in 100+ countries. Since global address formats differ significantly, the challenge was figuring out how to keep the forms as simple and intuitive to complete while still obtaining the necessary country-level details to proceed with ID verification.`,
       colorIndex: 0,
